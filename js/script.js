@@ -7,7 +7,10 @@ let listaCarousel = document.getElementById('listaCarousel');
 let carouselContainer = document.getElementById('carouselContainer');
 let tags = document.getElementById('tags');
 let listaEspecialidades = document.getElementById('listaEspecialidades');
-
+let correo = document.getElementById('correo');
+let nombre = document.getElementById('nombre');
+let mensaje = document.getElementById('mensaje');
+let boton = document.getElementById('boton');
 
 let datos = [
     {
@@ -638,3 +641,18 @@ const cargarCarousel = () => {
 }
 
 cargarCarousel();
+
+// Formulario
+
+const activateButton = () => {
+
+    if (nombre.value.trim() !== '' && correo.value.trim() !== '' && mensaje.value.trim() !== '') {
+        boton.removeAttribute("disabled");
+    } else {
+        boton.setAttribute("disabled", "true");
+    }
+}
+
+nombre.onkeyup = activateButton;
+correo.onkeyup = activateButton;
+mensaje.onkeyup = activateButton;
