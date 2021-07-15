@@ -613,7 +613,7 @@ const cargarCarousel = () => {
                 carouselContainer.innerHTML += `
 			<div class="carousel-item active">
                 <img src="${especialidad.imagen}" class="d-block w-100" height="500" alt="foto-${especialidad.especialidad}">
-                <div class="carousel-caption d-none d-md-block text-dark p-2 rounded" style="background-color: rgba(255, 255, 255, 0.5);">
+                <div class="carousel-caption  d-md-block text-dark p-2 rounded" style="background-color: rgba(255, 255, 255, 0.5);">
                     <h5>${especialidad.especialidad}</h5>
                     <p>${especialidad.servicios}</p>
                 </div>
@@ -629,7 +629,7 @@ const cargarCarousel = () => {
                 carouselContainer.innerHTML += `
 			<div class="carousel-item">
                 <img src="${especialidad.imagen}" class="d-block w-100" height="500" alt="foto-${especialidad.especialidad}">
-                <div class="carousel-caption d-none d-md-block text-dark p-2 rounded" style="background-color: rgba(255, 255, 255, 0.5);">
+                <div class="carousel-caption  d-md-block text-dark p-2 rounded" style="background-color: rgba(255, 255, 255, 0.5);">
                     <h5>${especialidad.especialidad}</h5>
                     <p>${especialidad.servicios}</p>
                 </div>
