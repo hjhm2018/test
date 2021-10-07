@@ -609,18 +609,16 @@ const cargarCarousel = () => {
                 listaCarousel.innerHTML += `
 				<li data-target="#carouselExampleCaptions" data-slide-to="${index}" class="active"></li>
 			`
-
                 carouselContainer.innerHTML += `
 			<div class="carousel-item active">
-                <img src="${especialidad.imagen}" class="d-block w-100" height="500" alt="foto-${especialidad.especialidad}">
-                <div class="carousel-caption  d-md-block text-dark p-2 rounded" style="background-color: rgba(255, 255, 255, 0.5);">
+                <img src="${especialidad.imagen}" class="d-md-block d-none w-100" height="500" alt="foto-${especialidad.especialidad}">
+                <img src="${especialidad.imagen}" class="d-block d-md-none w-100" height="300" alt="foto-${especialidad.especialidad}">
+                <div class="carousel-caption d-md-block text-dark p-2 rounded" style="background-color: rgba(255, 255, 255, 0.5);">
                     <h5>${especialidad.especialidad}</h5>
                     <p>${especialidad.servicios}</p>
                 </div>
             </div>
 			`
-
-
             } else {
                 listaCarousel.innerHTML += `
 				<li data-target="#carouselExampleCaptions" data-slide-to="${index}"></li>
@@ -628,8 +626,9 @@ const cargarCarousel = () => {
 
                 carouselContainer.innerHTML += `
 			<div class="carousel-item">
-                <img src="${especialidad.imagen}" class="d-block w-100" height="500" alt="foto-${especialidad.especialidad}">
-                <div class="carousel-caption  d-md-block text-dark p-2 rounded" style="background-color: rgba(255, 255, 255, 0.5);">
+                <img src="${especialidad.imagen}" class="d-md-block d-none w-100" height="500" alt="foto-${especialidad.especialidad}">
+                <img src="${especialidad.imagen}" class="d-block d-md-none w-100" height="300" alt="foto-${especialidad.especialidad}">
+                <div class="carousel-caption d-md-block text-dark p-2 rounded" style="background-color: rgba(255, 255, 255, 0.5);">
                     <h5>${especialidad.especialidad}</h5>
                     <p>${especialidad.servicios}</p>
                 </div>
